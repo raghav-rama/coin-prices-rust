@@ -1,5 +1,5 @@
 # coin-prices-rust
-CLI app to display coin prices of some popular coins
+CLI app written in Rust🦀 to display prices of some popular coins
 
 # directions
 - clone repo and use `cargo run`
