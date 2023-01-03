@@ -66,7 +66,7 @@ impl CoinPrices {
     fn populate_coin_price_field(&mut self) {
         let coin_data = Coins::deserialize();
         for coin in coin_data.coins.iter() {
-            self.prices.insert(coin.name.clone(), coin.price.clone());
+            self.prices.insert(coin.name.clone(), coin.price);
         }
     }
     fn get_coin_price(&self, coin_name: String) -> Result<f32, String> {
